@@ -148,9 +148,11 @@ def List_Tuples_Set_Conditionals():
     
     #2.pop() method: removes the specified index, example x.pop(1) remove second item and if nothing mentioned x.pop() 
                      #remove last item
-    y=["Ho,","Welcome","to","urban","town"]
-    y.pop("Hi,")
-    print(y)  #print ->"Welcome","to","urban","town"]                 
+    # use integer index or empty for last item
+    y = ["Ho", "Welcome", "to", "urban", "town"]
+    y.pop(0)           # removes "Ho"
+    # or y.remove("Ho")
+    print(y)           # ['Welcome', 'to', 'urban', 'town']                 
     
     
     
@@ -164,7 +166,7 @@ def List_Tuples_Set_Conditionals():
     #4.del keyword: also delete the list completely
     r = ["apple", "banana", "cherry"]
     del r
-    print(r)  #deletes list completely
+    # print(r)         
     
     
     
@@ -331,9 +333,8 @@ def List_Tuples_Set_Conditionals():
     f.remove("teal")              #prints -> {"green","yellow"}
     print(f)
     
-    fi={"green","yellow","teal"}   # If the item to remove does not exist, remove() "will" raise an error
-    fi.remove("orange")            #prints -> error
-    print(fi)
+    # If the item to remove does not exist, remove() "will" raise an error
+     #prints -> error
     
     fx={"green","yellow","teal"}   # If the item to remove does not exist discard() "will NOT" raise an error
     fx.discard("orange")           #prints -> {"green","yellow","teal"} ,no errors
@@ -357,9 +358,10 @@ def List_Tuples_Set_Conditionals():
     print(tw)  #prints -> set()
     
     #The del keyword will delete the set completely:
-    az={2,4,6,12}
-    del az 
-    print(az)  #prints -> error
+    #example:-
+    #az={2,4,6,12}
+    #del az 
+    #print(az)  #prints -> error
 
     
     
@@ -460,10 +462,13 @@ def List_Tuples_Set_Conditionals():
     #4) del car deletes entire dict.
     #5) .clear() empties dict.
     
-    car.pop("model")
-    car.popitem()
-    del car["year"]
-    car.clear()
+    #EXAMPLES:-
+   #(1. car.pop("model")
+   #2. car.popitem()
+   #3. del car["year"]
+   #4. car.clear()
+   #)
+    
     
     #5)fromkeys(seq, value) -> Creates a new dict with keys from seq and the same optional value.
     #key --> Required. An iterable specifying the keys of the new dictionary
@@ -496,25 +501,5 @@ def List_Tuples_Set_Conditionals():
     
     
     #TOPIC-4(CONDITIONALS)     
-    print("conditionals:") 
-    
-    
-                
-
-    
-
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-                                  
-    
-    
+    print("condition")
 List_Tuples_Set_Conditionals()    
