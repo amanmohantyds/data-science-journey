@@ -25,7 +25,7 @@ def Details():
     
     #type casting 
     x=str(0.123) #float to string
-    y=int("1.123") #float to integer
+    y=int(float("1.123")) #float to integer
     z=float(5) #integer to float
     l=str("king") #string to string
     print(x,y,z,l) 
