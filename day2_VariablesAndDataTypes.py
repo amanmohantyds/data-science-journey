@@ -275,6 +275,15 @@ def Details():
     print(1 < x and x < 10)  #true
     
     
+    
+    
+    print("------------------------------------------------------------------")
+    print("Logical Operator")
+    print("------------------------------------------------------------------")
+    
+    
+    
+    
     #Logical Operator
     
     #1.and -->(Returns True if both statements are true)
@@ -288,6 +297,15 @@ def Details():
     #3.not --> (Reverse the result, returns False if the result is true)
     xg = 5
     print(not(xg > 3 and xg < 10)) # prints false
+    
+    
+    
+    
+    print("------------------------------------------------------------------")
+    print("Identity Operator")
+    print("------------------------------------------------------------------")
+    
+    
     
     
     #Identity Operator
@@ -319,6 +337,14 @@ def Details():
     
     
     
+    
+    print("------------------------------------------------------------------")
+    print("Membership Operator")
+    print("------------------------------------------------------------------")
+    
+    
+    
+    
     #Membership Operator
     
     #1.in--> (Returns True if a sequence with the specified value is present in the object)
@@ -328,10 +354,6 @@ def Details():
     #2.not in -->(Returns True if a sequence with the specified value is not present in the object)
     fr = ["apple", "banana", "cherry"]
     print("pineapple" not in fr)  #true
-        
-    
-    
-    
-    
-    
+
+
 Details()
