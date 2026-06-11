@@ -1,0 +1,5 @@
+{
+    "editor.codeActionWidget.includeNearbyQuickFixes": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestOnTriggerCharacters": false
+}
