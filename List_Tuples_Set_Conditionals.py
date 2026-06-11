@@ -23,6 +23,7 @@ def List_Tuples_Set_Conditionals():
     
     
     
+    
     #Basic Examples of List
     x=["car","bike","scooter"]
     print(x)    #prints--> ["car","bike","scooter"]
