@@ -344,7 +344,7 @@ def Details():
     
     
     
-    
+     
     #Membership Operator
     
     #1.in--> (Returns True if a sequence with the specified value is present in the object)
@@ -355,5 +355,5 @@ def Details():
     fr = ["apple", "banana", "cherry"]
     print("pineapple" not in fr)  #true
 
-
+    print("end")
 Details()
