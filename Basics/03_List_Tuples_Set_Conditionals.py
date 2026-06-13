@@ -1,4 +1,23 @@
 def List_Tuples_Set_Conditionals():
+    
+    #Input Method
+     # x = input("Enter the name or thing")
+    
+    #For removing extra space in input
+     # x = int(input().strip())
+    
+    #For Single integer input
+     # x=int(input())
+    
+    #For multiple input
+     # x,y=input().split()
+    
+    #For multiple integer input
+     # x, y = map(int, input().split())
+    
+    #for multiple input
+     # n = int(input().strip())
+     
     print("----------------------------------------------------------------")
     print("LIST")
     print("---------------------------------------------------------------")
@@ -45,11 +64,11 @@ def List_Tuples_Set_Conditionals():
     
     
     #Access List Items
-    #1.first item
+    #1.first item with []
     a = ["apple", "banana", "cherry"]
     print(a[1])  #prints --> banana
     
-    #2.last item
+    #2.last item [-ve]
     b=["apple", "banana", "cherry"]
     print(b[-1]) #prints --> cherry
     
@@ -59,7 +78,7 @@ def List_Tuples_Set_Conditionals():
                 #They can be of any data type i.e. string,int,boolean
                 #Use of list() -> It is also possible to use the list() constructor when creating a new list.
                 
-    #3.range            
+    #3.range [x:y]           
     L = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
     print(L[2:5])  #prints ->['cherry', 'orange', 'kiwi']
                    #This will return the items from position 2 to 5.
@@ -79,14 +98,14 @@ def List_Tuples_Set_Conditionals():
     
     #Change List Items
     
-    #1.
+    #1. x[n]= " .."
     c = ["apple", "banana", "cherry"]
     c[1] = "blackcurrant"
     print(c)            #prints -->['apple', 'blackcurrant', 'cherry']
     
     
     
-    #2.Change a Range of Item Values
+    #2.Change a Range of Item Values with [x:y]
     d = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
     d[1:3] = ["blackcurrant", "watermelon"]
     print(d)            #prints -->['apple', 'blackcurrant', 'watermelon', 'orange', 'kiwi', 'mango']
@@ -105,7 +124,7 @@ def List_Tuples_Set_Conditionals():
     
     
     
-    #5.insert() :add items at specific index
+    #5.insert() :add items at specific index using [index,item]
     thislist = ["apple", "banana", "cherry"]
     thislist.insert(1, "orange")
     print(thislist)      #print-> ['apple', 'orange', 'banana', 'cherry']
@@ -176,6 +195,10 @@ def List_Tuples_Set_Conditionals():
     dl.clear()
     print(dl)
     
+  #---------------------------------------------------------------------------------------
+    
+    
+    
     
     #Rest Of Methods
     #1.copy() ->Returns a copy of the list
@@ -183,8 +206,31 @@ def List_Tuples_Set_Conditionals():
     #3.reverse() ->Reverses the order of the list
     #4.sort() ->Sorts the list
                  
+    #To Check if a number is in a range of number:
+    # num in range(x,y) 
+    #Here "x" is included and "y" is excluded      
+    # OR 
+    # num1 <= x <= num2
+    
+    
+    #To Check Odd Number
+    # n % 2 != 0   OR  n % 2 == 1     
+       
+    #Range
+     # range(stop)
+     # range(start, stop)
+    #Range that moves by 2 
+     # range(start, stop, step)
+    #Range in reverse 
+     # range(start, 0, -1)  #here start is last number
+     
+     
+     #Python do not use " = " symbol in for loop
                  
                  
+    #---------------------------------------------------------------------------------------     
+    
+           
     print("----------------------------------------------------------------")
     print("TUPLES")
     print("---------------------------------------------------------------")
@@ -623,6 +669,22 @@ def List_Tuples_Set_Conditionals():
     b = 330
     print("A") if a > b else print("=") if a == b else print("B")  #prints-> =
      
+     
+     
+     
+     
+    print("----------------------------------------------------------------")
+    print("Practice")
+    print("---------------------------------------------------------------")
+    
+    
+    
+    
+     #Practice
+      #loops
+       #The provided code stub reads an integer,n, from STDIN. For all non-negative integers i<n, print i square.
+       #Constraints:1<=n<=20
+       
      
     
 List_Tuples_Set_Conditionals()    
