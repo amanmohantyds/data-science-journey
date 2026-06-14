@@ -81,7 +81,7 @@ def Details():
     #1.join
     myTuple = ("John", "Peter", "Vicky")
     x = "A".join(myTuple)
-    print(x) #prints JohnAPeterAVicky
+    print(x) #prints JohnAPeterAVicky     #Note:- Can be used to insert something within every item of list/tuple etc
     
     
     
@@ -98,7 +98,7 @@ def Details():
     #2.find()
     txt = "Hello, welcome to my world."
     xr = txt.find("welcome")
-    print(xr)  #Prints -> 7
+    print(xr)  #Prints -> 7          #Note:- Can be used for Finding at which index is a Item Present
     
     
     

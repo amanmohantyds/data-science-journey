@@ -205,7 +205,13 @@ def List_Tuples_Set_Conditionals():
     #2.count() ->Returns the number of elements with the specified value
     #3.reverse() ->Reverses the order of the list
     #4.sort() ->Sorts the list
-                 
+    
+    
+    
+    #Note:-
+    #To store items in a list use --> list()
+                
+                           
     #To Check if a number is in a range of number:
     # num in range(x,y) 
     #Here "x" is included and "y" is excluded      
