@@ -1,4 +1,3 @@
-See [Basics/README.md](./Basics/README.md) for an index of basics exercises and notes.
 # Basics
 
 | # | File | Notes |
