@@ -52,7 +52,13 @@
    -> del list[index] → removes item at index (uses [])
    -> del list → deletes the entire list object
    -> .clear() → empties the list (keeps the object, just empty)
-
+   
+    #List Comprehensions
+   -> List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+   -> Syntax: newlist = ['expression' for item in 'iterable' if 'condition' == True]
+   -> The condition is like a filter that only accepts the items that evaluate to True
+   -> The iterable can be any iterable object, like a list, tuple, set etc.
+   -> You can use the range() function to create an iteration
     #Other Methods (noted but not demoed)
 
    ->.copy() → returns a copy of the list
