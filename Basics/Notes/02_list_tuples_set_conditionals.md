@@ -62,6 +62,7 @@
 
    -> The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a 
       list item in the new list. Example:- newlist = [x.upper() for x in fruits]
+                                 Example:- list= [x*x for x in range(5)]   #prints-> [0,1,4,9,16]
 
    -> You can set the outcome to whatever you like. 
        Example:- newlist = ['hello' for x in fruits] ,it prints "hello" when ever there is a item in fruits
