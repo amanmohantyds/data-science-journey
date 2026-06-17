@@ -7,7 +7,7 @@
 | 03 | [Lists, Tuples, Sets, Conditionals](./03_List_Tuples_Set_Conditionals.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
 | 04 | [List Comprehensions & Lambdas](./04_ListComprehensions_LambaFuctions.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
 | 05 | [File Handling](./05_File_Handling.py) | [Notes](./Notes/03_file_handling.md) |
-| 06 | [Exception Handling](./06_Exception_Handling.py) | [Notes](./04_exception_handling.md) |
+| 06 | [Exception Handling](./06_Exception_Handling.py) | [Notes](./Notes/04_exception_handling.md) |
 
 
 ## HackerRank Practice
