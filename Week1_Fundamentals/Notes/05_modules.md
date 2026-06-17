@@ -13,6 +13,7 @@
    mymodule.greeting("Jonathan")           #Note:- When using a function from a module, 
                                                    use the syntax: module_name.function_name.  
 
+
     #Variables in Module
     It can contain variables of all types (arrays, dictionaries, objects etc)
 

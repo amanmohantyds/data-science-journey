@@ -1,4 +1,4 @@
-# Basics
+# Week1_Fundamentals
 
 | # | File | Notes |
 |---|---|---|
