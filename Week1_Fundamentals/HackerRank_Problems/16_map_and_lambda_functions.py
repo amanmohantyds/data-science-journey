@@ -1,8 +1,3 @@
-"""
-Problem: Map and Lambda Functions
-Link: https://www.hackerrank.com/challenges/map-and-lambda-expression/problem?isFullScreen=true
-
-"""
 cube = lambda x: x**3
 
 def fibonacci(n):

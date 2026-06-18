@@ -1,8 +1,3 @@
-"""
-Problem: Mutations
-Link: https://www.hackerrank.com/challenges/python-mutations/problem?isFullScreen=true
-
-"""
 def mutate_string(string, position, character):
     string = string[:position] + character + string[position+1:]
     return string

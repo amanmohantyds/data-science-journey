@@ -1,8 +1,3 @@
-"""
-Problem: Print Formatted Number
-Link: https://www.hackerrank.com/challenges/python-string-formatting/problem?isFullScreen=true
-
-"""
 def print_formatted(number):
     
     width = len(bin(number))-2

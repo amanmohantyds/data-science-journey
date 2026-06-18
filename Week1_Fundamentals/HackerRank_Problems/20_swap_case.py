@@ -1,8 +1,3 @@
-"""
-Problem: Swap Case
-Link: https://www.hackerrank.com/challenges/swap-case/problem?isFullScreen=true
-
-"""
 def swap_case(s):
     l=s.swapcase()
     return l

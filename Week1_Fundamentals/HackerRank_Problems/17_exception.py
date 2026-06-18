@@ -1,8 +1,3 @@
-"""
-Problem: Exceptions
-Link: https://www.hackerrank.com/challenges/exceptions/problem?isFullScreen=true
-
-"""
 def exceptions():
  if __name__ == '__main__':
      N = int(input())

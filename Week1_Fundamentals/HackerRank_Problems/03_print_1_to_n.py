@@ -1,8 +1,3 @@
-"""
-Problem: print 1 to n
-Link: https://www.hackerrank.com/challenges/python-print/problem?isFullScreen=true
-
-"""
 if __name__ == '__main__':
     n = int(input())
     

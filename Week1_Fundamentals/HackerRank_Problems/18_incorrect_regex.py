@@ -1,8 +1,3 @@
-"""
-Problem: Incorrect Regex
-Link: https://www.hackerrank.com/challenges/incorrect-regex/problem?isFullScreen=true
-
-"""
 def incorrect_regex():
     import re
     T=int(input())

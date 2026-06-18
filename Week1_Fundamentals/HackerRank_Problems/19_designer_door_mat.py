@@ -1,8 +1,3 @@
-"""
-Problem: Designer Door Mat
-Link: https://www.hackerrank.com/challenges/designer-door-mat/problem?isFullScreen=true
-
-"""
 def designer_door_mat():
  if __name__ == '__main__':
     

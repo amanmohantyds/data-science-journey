@@ -1,8 +1,3 @@
-"""
-Problem: Nested Lists
-Link: https://www.hackerrank.com/challenges/nested-list/problem?isFullScreen=true
-
-"""
 if __name__ == '__main__':
     students=[]
     
