@@ -12,9 +12,9 @@
 
 ## HackerRank Practice
 
-| # | Problem | Code |
-|---|---|---|
-| 01 | Loops & Square Integers | [Code](./HackerRank_Problems/01_loops_square_integers,py) |
+| # | Problem | Code | Question |
+|---|---|---|---|
+| 01 | Loops & Square Integers | [Code](./HackerRank_Problems/01_loops_square_integers,py) | [Question] (https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true)
 | 02 | Write a Function (Leap Year) | [Code](./HackerRank_Problems/02_write_a_function_leap_year.py) |
 | 03 | Print 1 to N | [Code](./HackerRank_Problems/03_print_1_to_n.py) |
 | 04 | Arithmetic Operators | [Code](./HackerRank_Problems/04_arithmetic_operators.py) |
