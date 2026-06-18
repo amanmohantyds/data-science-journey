@@ -12,8 +12,8 @@
 
 ## HackerRank Practice
 
-| # | Problem | Code | Notes |
-|---|---|---|---|
+| # | Problem | Code |
+|---|---|---|
 | 01 | Loops & Square Integers | [Code](./HackerRank_Problems/01_loops_square_integers,py) |
 | 02 | Write a Function (Leap Year) | [Code](./HackerRank_Problems/02_write_a_function_leap_year.py) |
 | 03 | Print 1 to N | [Code](./HackerRank_Problems/03_print_1_to_n.py) |
@@ -32,3 +32,7 @@
 | 16 | Map and Lambda Functions | [Code](./HackerRank_Problems/16_map_and_lambda_functions.py) |
 | 17 | Exceptions | [Code](./HackerRank_Problems/17_exception.py) |
 | 18 | Incorrect Regex | [Code](./HackerRank_Problems/18_incorrect_regex.py) |
+| 19 | Designer Door Mat | [Code](./HackerRank_Problems/19_designer_door_mat.py) |
+| 20 | Swap Case | [Code](./HackerRank_Problems/20_swap_case.py) |
+| 21 | String Formatting | [Code](./HackerRank_Problems/21_string_formatting.py) |
+| 22 | Set and .add() | [Code](./HackerRank_Problems/22_set.add().py) |
