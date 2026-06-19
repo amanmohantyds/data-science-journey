@@ -36,3 +36,4 @@
 | 20 | Swap Case | [Code](./HackerRank_Problems/20_swap_case.py) | [Question](https://www.hackerrank.com/challenges/swap-case/problem?isFullScreen=true)
 | 21 | String Formatting | [Code](./HackerRank_Problems/21_string_formatting.py) | [Question](https://www.hackerrank.com/challenges/python-string-formatting/problem?isFullScreen=true)
 | 22 | Set and .add() | [Code](./HackerRank_Problems/22_set.add().py) | [Question](https://www.hackerrank.com/challenges/py-set-add/problem?isFullScreen=true)
+| 23 | The Captain's Room | [Code](./HackerRank_Problems/23_the_captain's_room.py) | [Question](https://www.hackerrank.com/challenges/py-the-captains-room/problem?isFullScreen=true)
