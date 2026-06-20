@@ -353,5 +353,45 @@ def List_Tuples_Set_Conditionals():
     b = 330
     print("A") if a > b else print("=") if a == b else print("B")  #prints-> =
  
+ 
+   # Nested Loop (2 Levels)
+    for xi in range(3):  # outer loop
+      for yi in range(2):  # inner loop
+        print(f"({xi}, {yi})")
     
+   # Nested Loop (3 Levels)
+    for a in range(3):  # outer loop
+      for b in range(2):  # inner loop
+        for c in range(2):
+            print(f"({a}, {b}, {c})")   
+            
+    # Combination Example
+    colors = ['red', 'blue', 'green']
+    sizes = ['L', 'M', 'S']
+
+    for color in colors:
+      for size in sizes:
+        print(f'{color} - Size {size}')          
+        
+    # Real-World Example (File Generation)
+    # Generating file names dynamically using years, months, and days.
+    years = [2026, 2027]
+    months = ['Jan', 'Feb']
+    days = range(1, 29)
+
+    for yr in years:
+      for mn in months:
+        for dy in days:
+            print(f'report_{yr}_{mn}_{dy}.csv')
+            
+    # Real-World Example (SQL Generation)
+    # Automatically generating SQL queries for multiple tables and columns.
+    tables = ['customers', 'orders', 'products', 'prices']
+    columns = ['id', 'create_date']
+
+    for t in tables:
+      for c in columns:
+        print(f'SELECT count(*) FROM {t} WHERE {c} IS NULL;')        
+    
+        
 List_Tuples_Set_Conditionals()    
