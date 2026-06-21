@@ -10,8 +10,16 @@ def List_Tuples_Set_Conditionals():
     print(y)    #prints --> [5, 6, 23] 
     
     
+    #Creating a List from range()
+    # range() generates numbers. list() converts them into a list.
+
+    numbers = list(range(5))
+    print(numbers)
     
-    #Access List Items
+    
+    
+    
+    #Access List Items  
   
     a = ["apple", "banana", "cherry"]
     print(a[1])  #prints --> banana
@@ -38,7 +46,52 @@ def List_Tuples_Set_Conditionals():
     
     
     
+    
+    
+    
    
+   # Slicing Inside Nested Lists
+        # Combine indexing + slicing.
+
+    matrix = [
+       ['a', 'b', 'c'],  # Row 0
+       ['d', 'e', 'f'],  # Row 1
+       ['g', 'h', 'i']   # Row 2
+    ]
+    print(matrix[2][:2])   # -> ['g', 'h']  (first two of last row) # list[row][:column]
+    
+    
+    
+    # Basic Analysis Functions
+    numbers = [1, 5, 5, 4, 3]
+    print("Max:", max(numbers))        # -> 5  (largest value)
+    print("Min:", min(numbers))        # -> 1  (smallest value)
+    print("Sum:", sum(numbers))        # -> 18 (total of elements)
+    print("Length:", len(numbers))     # -> 5  (number of elements)
+   
+   
+    
+    # all()
+      # Returns True if all elements are truthy.
+    print("All:", all(numbers))            # -> True  (no zero values)
+    print("All:", all([1, 0, 2]))          # -> False (0 is falsy)
+    print("All:", all(['a', '', 'b']))     # -> False (empty string is falsy)
+    print("All:", all(['a', 'c', 'b']))    # -> True  (all non-empty)
+    
+    
+    #any()
+      # Returns True if at least one element is truthy.
+    print("Any:", any(numbers))            # -> True  (non-zero values exist)
+    print("Any:", any([1, 0, 2]))          # -> True  (1 and 2 are truthy)
+    print("Any:", any(['a', '', 'b']))     # -> True  (non-empty string exists)
+    print("Any:", any([0, 0, 0]))          # -> False (all values are falsy)
+    
+    
+    # count() and index()
+    print("Count:", numbers.count(5))   # -> 2  (5 appears twice)
+    print("Index:", numbers.index(5))   # -> 1  (first occurrence position)
+    
+    
     
     st = ["apple", "banana", "cherry"]
     st.append("orange")
