@@ -353,6 +353,133 @@ def List_Tuples_Set_Conditionals():
     b = 330
     print("A") if a > b else print("=") if a == b else print("B")  #prints-> =
  
+    # Combined Conditions with and/or
+   
+    score = 50
+    submitted_project = True
+
+    if score >= 90 and submitted_project:
+      print("A+")
+    elif score >= 90:
+      print("A")
+    elif score >= 80:
+      print("B")
+    elif score >= 70:
+      print("C")
+    elif score >= 60 or submitted_project:
+      print("D")
+    else:
+      print("F")
+    
+    
+    # Traditional If-Elif Version
+
+    country = "USA"
+
+    if country == "United States":
+      print("US")
+    elif country == "India":
+      print("IN")
+    elif country == "Egypt":
+      print("EG")
+    elif country == "Germany":
+      print("DE")
+    else:
+      print("Unknown Country")
+      
+    # match-case Version
+    # Cleaner and more readable for many conditions.
+    
+    country = "USA"
+
+    match country:
+
+       case "United States" | "USA":
+         print("US")
+
+       case "India":
+         print("IN")
+
+       case "Egypt":
+         print("EG")
+
+       case "Germany":
+         print("DE")
+
+       case _:
+         print("Unknown Country")
+    
+    
+    
+    # Example 2: HTTP Status Handler
+    # Handle response codes from an API.
+
+    status_code = 404
+
+    match status_code:
+
+      case 200:
+          print("Request successful")
+
+      case 400:
+          print("Bad request")
+
+      case 401:
+          print("Unauthorized access")
+
+      case 404:
+          print("Resource not found")
+
+      case 500:
+          print("Internal server error")
+
+      case _:
+          print("Unhandled status code")
+    
+ 
+ 
+    # Independent Conditions
+    score = 50
+    submitted_project = True
+
+    if score >= 90:
+      print("High Score")
+    else:
+      print("Low Score")
+
+    if submitted_project:
+      print("Project is submitted")
+    else:
+      print("Project is not submitted") 
+ 
+ 
+ 
+    
+    # Cleaning Data Inside a Loops
+    # Cleaning file names before processing them.
+
+    files = [' Report.csv ', 'DATA.csv ', ' final.TXT']
+
+    for file in files:
+       file = file.strip().lower().replace('.txt', '.csv')
+       print(f"Processing {file}")
+    
+    
+    # Real-World Example (Security Check)
+    # Stop processing if a suspicious input appears.
+    emails = [
+       'data@gmail.com',
+       'baraa@outlook.de',
+       'DROP TABLE USERS;',
+       'maria@gmail.com'
+    ]
+
+    for email in emails:
+        if ';' in email:
+            print('SQL Injection: Hacker Attack')
+            break
+        print(f'Processing Email: {email}')
+ 
  
    # Nested Loop (2 Levels)
     for xi in range(3):  # outer loop
@@ -365,13 +492,11 @@ def List_Tuples_Set_Conditionals():
         for c in range(2):
             print(f"({a}, {b}, {c})")   
             
-    # Combination Example
-    colors = ['red', 'blue', 'green']
-    sizes = ['L', 'M', 'S']
-
-    for color in colors:
-      for size in sizes:
-        print(f'{color} - Size {size}')          
+    
+    
+           
+        
+        
         
     # Real-World Example (File Generation)
     # Generating file names dynamically using years, months, and days.
@@ -383,6 +508,8 @@ def List_Tuples_Set_Conditionals():
       for mn in months:
         for dy in days:
             print(f'report_{yr}_{mn}_{dy}.csv')
+            
+            
             
     # Real-World Example (SQL Generation)
     # Automatically generating SQL queries for multiple tables and columns.

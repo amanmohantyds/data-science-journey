@@ -210,4 +210,29 @@ def Details():
     print("pineapple" not in fr)  #true
 
     print("end")
+    
+    
+    
+    
+    email    = ""
+    phone    = "017-1234"
+    username = "baraa123"
+    
+    # Allows registration if at least one field is filled
+    print(any([email, phone, username]))  # ➜ True
+
+    # Allows registration only if all fields are filled
+    print(all([email, phone, username]))  # ➜ False
+    
+    # Type Checking with isinstance()
+    print(isinstance(123, int))     # ➜ True
+    print(isinstance(True, str))    # ➜ False
+    
+    # String Start/End Checks
+    print("Hello".endswith("o"))    # ➜ True
+    print("Hello".startswith("o"))  # ➜ False
+    
+    
+    
+    
 Details()
