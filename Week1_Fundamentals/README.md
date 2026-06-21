@@ -4,7 +4,7 @@
 |---|---|---|
 | 01 | [Day 1](./01_day1.py) | — |
 | 02 | [Variables & Data Types](./02_VariablesAndDataTypes.py) | [Notes](./Notes/01_variables_and_dataTypes.md) |
-| 03 | [Lists, Tuples, Sets, Conditionals](./03_List_Tuples_Set_Conditionals.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
+| 03 | [Lists, Tuples, Sets, Conditionals, and Loops](./03_List_Tuples_Set_Conditionals_Loops.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
 | 04 | [List Comprehensions & Lambdas](./04_ListComprehensions_LambaFuctions.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
 | 05 | [File Handling](./05_File_Handling.py) | [Notes](./Notes/03_file_handling.md) |
 | 06 | [Exception Handling](./06_Exception_Handling.py) | [Notes](./Notes/04_exception_handling.md) |
@@ -37,3 +37,8 @@
 | 21 | String Formatting | [Code](./Practice_Problems/21_string_formatting.py) | [Question](https://www.hackerrank.com/challenges/python-string-formatting/problem?isFullScreen=true)
 | 22 | Set and .add() | [Code](./Practice_Problems/22_set.add().py) | [Question](https://www.hackerrank.com/challenges/py-set-add/problem?isFullScreen=true)
 | 23 | The Captain's Room | [Code](./Practice_Problems/23_the_captain's_room.py) | [Question](https://www.hackerrank.com/challenges/py-the-captains-room/problem?isFullScreen=true)
+| 24 | Factorial | [Code](./Practice_Problems/24_factorial.py) | [Question](https://edabit.com/challenge/FF6kYPHdAcJnoosr5)
+| 25 | Repeating Letters | [Code](./Practice_Problems/25_repeating_letters.py) | [Question](https://edabit.com/challenge/HpqLxNqqRvMQoz8ME)
+| 26 | Sum of every no. divisible by n | [Code](./Practice_Problems/26_sum_of_every_divisible_integer_by_n.py) | [Question](https://edabit.com/challenge/nWtgKSNGQ3sB52rQ8)
+| 27 | Character in Shapes | [Code](./Practice_Problems/27_character_in_shapes.py) | [Question](https://edabit.com/challenge/S9KCN5kqoDbhNdKh5)
+| 28 | Even No. Generator | [Code](./Practice_Problems/28_even_no_generator.py) | [Question](https://edabit.com/challenge/eJLwXpuaffjFnzENN)
