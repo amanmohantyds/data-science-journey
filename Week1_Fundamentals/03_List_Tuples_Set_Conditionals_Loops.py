@@ -23,22 +23,16 @@ def List_Tuples_Set_Conditionals():
   
     a = ["apple", "banana", "cherry"]
     print(a[1])  #prints --> banana
-    
 
     b=["apple", "banana", "cherry"]
     print(b[-1]) #prints --> cherry
-    
-   
          
     L = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
     print(L[2:5]) 
  
     c = ["apple", "banana", "cherry"]
     c[1] = "blackcurrant"
-    print(c)          
-    
-    
-    
+    print(c)           
   
     d = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
     d[1:3] = ["blackcurrant", "watermelon"]
@@ -90,16 +84,16 @@ def List_Tuples_Set_Conditionals():
     # count() and index()
     print("Count:", numbers.count(5))   # -> 2  (5 appears twice)
     print("Index:", numbers.index(5))   # -> 1  (first occurrence position)
-    
-    
-    
+  
+       
+    #.append()
     st = ["apple", "banana", "cherry"]
     st.append("orange")
     print(st)            #prints-> ['apple', 'banana', 'cherry', 'orange']
     
     
     
-   
+    #.insert()   
     thislist = ["apple", "banana", "cherry"]
     thislist.insert(1, "orange")
     print(thislist)      #print-> ['apple', 'orange', 'banana', 'cherry']
@@ -107,21 +101,299 @@ def List_Tuples_Set_Conditionals():
     
     
  
-    print()
+    #.extend()
     th = ["apple", "banana", "cherry"]
     tr = ["mango", "pineapple", "papaya"]
     th.extend(tr)
     print(th)            #print-> ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
     
-    
-    
+      
    
     tlist = ["apple", "banana", "cherry"]
     tuple = ("kiwi", "orange")
     tlist.extend(tuple)
     print(thislist)     #print ->['apple', 'banana', 'cherry', 'kiwi', 'orange']
     
-  
+    
+    
+    # ---------------------------------------
+    # Adding to Matrix
+    # ---------------------------------------
+    # Adding Rows to a Matrix
+
+    matrix = [
+     ['a', 'b', 'c'],
+     ['d', 'e', 'f'],
+     ['g', 'h', 'i']
+    ]
+
+    matrix.append(['x', 'y', 'z'])
+    matrix.insert(0, ['a', 'a', 'a'])
+    print(matrix)
+    
+    
+    # ---------------------------------------
+    # Adding One Item to Matrix
+    # ---------------------------------------
+    matrix = [
+     ['a', 'b', 'c'],
+     ['d', 'e', 'f'],
+     ['g', 'h', 'i']
+    ]
+
+    matrix[1].append('x')
+    matrix[0].insert(0, 'z')
+    print(matrix)
+    
+    
+    # ---------------------------------------
+    # Updating Nested Lists
+    # ---------------------------------------
+    matrix = [
+     ['a', 'b', 'c'],
+     ['d', 'e', 'f'],
+     ['g', 'h', 'i']
+    ]
+
+    matrix[-1] = ['x', 'y', 'z']   # replace entire row
+    matrix[0][0] = '-'             # update specific element
+    matrix[1][1] = '-'
+    matrix[-1][-1] = '-'
+    print(matrix)
+    
+    
+    # ---------------------------------------
+    # sort() – Descending
+    # reverse=True sorts in descending order.
+
+    letters = ['c', 'a', 'b']
+    letters.sort(reverse=True)
+    print(letters)   # -> ['c', 'b', 'a']  (sorted descending)
+    
+    
+    # ---------------------------------------
+    # Sorting Nested Lists
+    # ---------------------------------------
+    # Lists are compared element by element.
+
+    matrix = [
+     ['d', 'e', 'f'],
+     ['a', 'z', 'i'],
+     ['a', 'a', 'c']
+    ]
+
+    matrix.sort()
+    print(matrix)
+    
+    
+    # ---------------------------------------
+    # Sorting Only One Row
+    # ---------------------------------------
+    # We can sort individual rows.
+    matrix = [
+     ['d', 'e', 'f'],
+     ['a', 'z', 'i'],
+     ['a', 'a', 'c']
+    ]
+
+    matrix[1].sort()
+    print(matrix)
+    
+    
+    # ---------------------------------------
+    # sorted() – Returns New List
+    # ---------------------------------------
+    # Does NOT modify the original list.
+
+    letters = ['c', 'a', 'b']
+
+    new_list = sorted(letters, reverse=True)
+    print('Original List:', letters)   # -> ['c', 'a', 'b']
+    print('Sorted List:', new_list)    # -> ['c', 'b', 'a']
+
+
+    # ---------------------------------------
+    # reversed() – Reverse Order
+    # ---------------------------------------
+    # reversed() returns an iterator.
+    # We convert it to list.
+
+    letterss = ['c', 'a', 'b']
+    new_list = list(reversed(letterss))
+    print('Original List:', letterss)    # -> ['c', 'a', 'b']
+    print('Reversed List:', new_list)   # -> ['b', 'a', 'c']
+     
+     
+     
+    # ---------------------------------------
+    # Shallow Copy with copy()
+    # ---------------------------------------
+    # Creates a new outer list.
+    letters = ['a', 'b', 'c']
+
+    letters_copy = letters.copy()
+    letters_copy.append('z')
+
+    print('Original:', letters)      # -> ['a', 'b', 'c']
+    print('Copy:', letters_copy)     # -> ['a', 'b', 'c', 'z']
+    # Only copy changed 
+    
+    
+    
+    # ---------------------------------------
+    # Shallow Copy with Nested Lists
+    # ---------------------------------------
+    # Inner lists are still shared.
+    matrix = [
+          ['a', 'b'],   # Row 0
+          ['c', 'd']    # Row 1
+    ]
+    matrix_copy = matrix.copy()
+
+    matrix.pop()                     # remove last row
+    matrix_copy[0].append('z')       # modify inner list
+
+    print('Original:', matrix)       
+    print('Copy:', matrix_copy)
+    # Inner list modified in both (shared reference)
+     
+     
+     
+     
+     
+    # ---------------------------------------
+    # Deep Copy
+    # ---------------------------------------
+    # Deep copy duplicates everything,
+    # including inner lists.
+
+    import copy
+    matrix = [
+        ['a', 'b'],  # Row 0
+        ['c', 'd'],  # Row 1
+    ]
+
+    matrix_copy = copy.deepcopy(matrix)
+
+    matrix.pop()
+    matrix_copy[0].append('z')
+
+    print('Original:', matrix) 
+    print('Copy:', matrix_copy) 
+    
+    
+    # ---------------------------------------
+    # zip()
+    # ---------------------------------------
+    # Combines elements position by position.
+    # Stops at shortest iterable.
+
+    letters = ['a', 'b', 'c']
+    numbers = [1, 2, 3, 4]
+
+    comb = list(zip(letters, numbers, "Hi"))
+
+    print(comb) # -> [('a', 1, 'H'), ('b', 2, 'i')]
+
+
+
+    # Practical Example (IDs + Names)
+
+    ids = [101, 102, 103]
+    names = ['Ali', 'Sara', 'John']
+
+    print(list(zip(ids, names))) # -> [(101, 'Ali'), (102, 'Sara'), (103, 'John')]
+    
+    
+    # ---------------------------------------
+    # Basic Iteration with Transformation
+    # ---------------------------------------
+
+    # Convert letters to uppercase manually
+    letters = ['a', 'b', 'c']
+    new_list = []
+
+    for l in letters:
+        new_list.append(l.upper())
+        print(new_list)
+        
+        
+    # ---------------------------------------
+    # enumerate()
+    # ---------------------------------------
+
+    # Get index and value together
+    letters = ['a', '', 'c']
+
+    for index, value in enumerate(letters):
+        print(index, value)    
+    
+    
+    
+    
+    # ---------------------------------------
+    # reversed()
+    # ---------------------------------------
+
+    # Iterate from the end to the beginning
+    letters = ['a', 'b', 'c']
+
+    for l in reversed(letters):
+        print(l)
+
+    # ---------------------------------------
+    # zip()
+    # ---------------------------------------
+
+    # Combine two related lists
+    letters = ['a', 'b', 'c']
+    numbers = [1, 2, 3]
+
+    for l, n in zip(letters, numbers):
+        print(l, n)
+
+
+
+    # ---------------------------------------
+    # map()
+    # ---------------------------------------
+
+    # Convert letters to uppercase automatically
+    letters = ['a', 'b', 'c']
+    print(list(map(str.upper, letters)))
+
+    # Convert string numbers to integers
+    numbers = ['1', '2', '3']
+    print(list(map(int, numbers)))
+
+    # Clean extra spaces from names
+    names = [' Maria ', ' John ', ' Kumar']
+
+    for n in map(str.strip, names):
+        print(n)
+
+
+    # ---------------------------------------
+    # filter()
+    # ---------------------------------------
+
+    # Remove falsy values
+    letters = ['a', '', 'b', None, 'c', False]
+    print(list(filter(bool, letters)))
+
+
+    # Task: Keep only alphabetic values
+    items = ['sql', '123', 'python', '42']
+
+    for i in filter(str.isalpha, items):
+        print(i)
+    
+    
+    
+    
+    
+    
+    
     #Remove
    
     y=["Hi,","Welcome","to","candy","town"]
@@ -129,36 +401,38 @@ def List_Tuples_Set_Conditionals():
     print(y)  #print ->["Welcome","to","candy","town"]
     
     
-    
-   
+   #pop
     y = ["Ho", "Welcome", "to", "urban", "town"]
     y.pop(0)           # removes "Ho"
    
     print(y)           # ['Welcome', 'to', 'urban', 'town']                 
-    
-    
-    
-    
+  
+    #del by index
     k = ["apple", "banana", "cherry"]
     del k[0]
     print(k)
-    
-    
-  
+ 
+    #full del
     r = ["apple", "banana", "cherry"]
     del r
     # print(r)         
     
-    
-    
-    
+    #.clear()    
     dl = ["apple", "banana", "cherry"]
     dl.clear()
     print(dl)
     
+    
+    
+    
+
+
+    #----------------------------------------------------------------------------------------
+    #TOPIC-2(TUPLES)
+    #----------------------------------------------------------------------------------------
 
                 
-    #TOPIC-2(TUPLES)
+    
 
     tuple= ("apple", "banana", "cherry", "apple", "cherry")
     print(tuple) # prints -> ("apple", 'banana', 'cherry', 'apple', 'cherry')

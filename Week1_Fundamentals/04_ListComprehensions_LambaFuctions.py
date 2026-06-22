@@ -29,6 +29,29 @@ def Comprehensions_and_Lamda():
     print(newlist7)        #if-else inside a for-loop 
     
                       
+       
+    # Task:
+    # 1. Keep only valid domains (must contain a dot)
+    # 2. Convert everything to lowercase
+
+    domains = [
+        'www.google.com',
+        'openai.com',
+        'localhost',
+        'WWW.DATAWITHBARAA.COM'
+    ]
+    # one line -> cleaned = [d.lower() for d in domains if '.' in d] 
+
+    cleaned = [
+        d.lower()
+        for d in domains
+        if '.' in d
+    ]
+
+    print(cleaned)
+
+       
+       
                        
     #Topic_2:Lamda Functions
     #-> The power of lambda is better shown when you use them as an anonymous function inside another function
@@ -64,4 +87,36 @@ def Comprehensions_and_Lamda():
     words = ["apple", "pie", "banana", "cherry"]
     sorted_words = sorted(words, key=lambda x: len(x))
     print(sorted_words)             #Sort strings by length
+    
+    
+    # Check membership in a string
+    check = lambda i: i in "python"
+    print(check('z'))
+
+    # Convert price string to float
+    prices = ['$12.50', '$9.99', '$100.00']
+    print(list(map(lambda p: float(p.replace('$', '')), prices)))
+
+    # ---------------------------------------
+    # Lambda with filter() & sorted ()
+    # ---------------------------------------
+
+    # Example 6: Keep only prices >= 100
+    prices = [120, 30, 300, 80]
+    print(list(filter(lambda p: p >= 100, prices)))
+
+    students = [
+        ['Maria', 85],
+        ['Kumar', 90],
+        ['Max', 60]
+    ]
+    # Keep students with score > 70
+    print(list(filter(lambda row: row[1] > 70, students)))
+
+    # Keep only students with names starting with 'M'
+    print(list(filter(lambda row: row[0].startswith('M'), students)))
+
+    # Sort students by their scores (ascending)
+    print(sorted(students, key=lambda row: row[1]))
+    
 Comprehensions_and_Lamda()
