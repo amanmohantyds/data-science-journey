@@ -8,9 +8,9 @@
 | 04 | [List Comprehensions & Lambdas](./04_ListComprehensions_LambaFuctions.py) | [Notes](./Notes/02_list_tuples_set_conditionals.md) |
 | 05 | [File Handling](./05_File_Handling.py) | [Notes](./Notes/03_file_handling.md) |
 | 06 | [Exception Handling](./06_Exception_Handling.py) | [Notes](./Notes/04_exception_handling.md) |
+| 07 | [Pandas](./07_pandas.py) | - |
 
-
-## HackerRank Practice
+## Practice Problems
 
 | # | Problem | Code | Question |
 |---|---|---|---|
@@ -42,3 +42,10 @@
 | 26 | Sum of every no. divisible by n | [Code](./Practice_Problems/26_sum_of_every_divisible_integer_by_n.py) | [Question](https://edabit.com/challenge/nWtgKSNGQ3sB52rQ8)
 | 27 | Character in Shapes | [Code](./Practice_Problems/27_character_in_shapes.py) | [Question](https://edabit.com/challenge/S9KCN5kqoDbhNdKh5)
 | 28 | Even No. Generator | [Code](./Practice_Problems/28_even_no_generator.py) | [Question](https://edabit.com/challenge/eJLwXpuaffjFnzENN)
+| 29 | Lambda Expression | [Code](./Practice_Problems/29_lambda_expression_all_the_way_down.py) | - |
+| 30 | Count No. of Argument | [Code](./Practice_Problems/30_count_no_of_argument.py) | - |
+| 31 | Text Wrap | [Code](./Practice_Problems/31_text_wrap.py) | - |
+| 32 | Time Delta | [Code](./Practice_Problems/32_time_delta.py) | - |
+| 33 | Accumulating best keys | [Code](./Practice_Problems/33_accumulating_best_keys.py) | - |
+| 34 | Beginning | [Code](./Practice_Problems/34_beginning.py) | - |
+| 35 | Custom sorting lambda | [Code](./Practice_Problems/35_custom_sorting_lambda.py) | - |
