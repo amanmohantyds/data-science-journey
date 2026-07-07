@@ -6,5 +6,18 @@
         "commands": "on",
         "unknown": "on",
         "arguments": "on"
-    }
+    },
+    "cSpell.words": [
+        "autopct",
+        "dashdot",
+        "fontsize",
+        "fontweight",
+        "markerfacecolor",
+        "markersize",
+        "Skyblue",
+        "startangle",
+        "xlabel",
+        "xticks",
+        "ylabel"
+    ]
 }
