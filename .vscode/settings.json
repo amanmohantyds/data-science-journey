@@ -14,8 +14,10 @@
         "fontweight",
         "markerfacecolor",
         "markersize",
+        "Referer",
         "Skyblue",
         "startangle",
+        "useragent",
         "xlabel",
         "xticks",
         "ylabel"
